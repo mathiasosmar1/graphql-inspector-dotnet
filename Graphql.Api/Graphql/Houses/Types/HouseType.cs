@@ -8,10 +8,10 @@ namespace Graphql.Api.GraphQL.Houses.Types
         public HouseType()
         {
             Name = "House";
-            Field(x => x.Id, type: typeof(IdGraphType)).Description("House Identification");
+            Field(x => x.Id, type: typeof(IdGraphType)).Description("House Id");
             Field(x => x.Number).Description("House number");
-            Field(x => x.Address).Description("House address");
-            Field(x => x.OwnerName).Description("House owner name");
+            // Field(x => x.Address).Description("House address");
+            Field(x => x.OwnerName).Description("House owner");
         }
     }
 }
