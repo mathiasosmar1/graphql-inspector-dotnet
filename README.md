@@ -81,7 +81,7 @@ Neste exemplo foram abordados os comandos *introspect* e *diff* do *graphql-insp
 ## Links
 
   - [Documentação][site-graphql-inspector]
-  - [GitHub] [repo-graphql-inspector]
+  - [GitHub][repo-graphql-inspector]
   
    [repo-graphql-inspector]: <https://github.com/kamilkisiela/graphql-inspector/>
    [site-graphql-inspector]: <https://graphql-inspector.com>
