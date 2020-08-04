@@ -26,10 +26,12 @@ npm install --global @graphql-inspector/cli graphql
 
 Existem várias maneiras de obter o schema da sua api GraphQL, nesse exemplo será demonstrado como exportar o schema da api *Graphql.Api* atráves do *graphql-inspector cli*.
 
-Para obter o schema do GraphQL é necessário que a api esteja rodando. Para executar siga os passos abaixo:
+Para obter o schema do GraphQL é necessário que a api esteja executando. Para isso siga os passos abaixo:
 
 ```cmd
 cd graphql-inspector-dotnet
+
+dotnet build
 
 dotnet run --project Graphql.Api\Graphql.Api.csproj
 ```
@@ -37,7 +39,7 @@ dotnet run --project Graphql.Api\Graphql.Api.csproj
 Depois de iniciar a api, vamos abrir outro terminal para poder executar os comandos do *graphql-inspector cli*. A execução dos comandos devem ser a partir da pasta *graphql-inspector-dotnet*.
 
 ```cmd
-graphql-inspector introspect http://localhost:5000/graphql --write /schemas/new_schema.graphql
+graphql-inspector introspect http://localhost:5000/graphql --write schemas/new_schema.graphql
 ```
 
 Depois de executar o comando, será gerado um novo arquivo *new_schema.graphql* dentro da pasta *schemas*, que podemos usar para realizar comparações a seguir.
@@ -83,5 +85,4 @@ Neste exemplo foram abordados os comandos *introspect* e *diff* do *graphql-insp
   
    [repo-graphql-inspector]: <https://github.com/kamilkisiela/graphql-inspector/>
    [site-graphql-inspector]: <https://graphql-inspector.com>
-   [yarn-url]: <https://classic.yarnpkg.com/pt-BR/>
    [npm-url]: <https://docs.npmjs.com/>
